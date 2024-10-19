@@ -1,0 +1,169 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Add smooth scrolling for internal links */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Navigation Menu Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 20px 0;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on menu items */
+.nav-list li a:hover {
+  background-color: #f0a500;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+/* Change background color when scrolled */
+.scrolled {
+  background-color: #000;
+}
+
+/* Add top padding to prevent header from covering content */
+body {
+  padding-top: 80px; /* Adjust this based on the height of the navbar */
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+
+  .nav-list li {
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+}
+
+/* Section Background Colors */
+#home {
+  background-color: #fffbf0;
+}
+
+#about {
+  background-color: #f4f4f4;
+}
+
+#services {
+  background-color: #eaeaea;
+}
+
+#contact {
+  background-color: #dddddd;
+}
+
+/* Section Titles */
+section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Buttons for section */
+button {
+  background-color: #f0a500;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d48e00;
+}
+
+/* Optional Box Shadows for Buttons or Containers */
+button, .nav-list li a {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
